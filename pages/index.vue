@@ -133,7 +133,7 @@
                 <div class="educationarea__small__img">
 
                   <div class="educationarea__small__para">
-                    <p>Ayo Menabung Untuk Haji</p>
+                    <p>Ayo Haji dan Umroh bersama PT. Kamilah Wisata Muslim</p>
                   </div>
                 </div>
 
