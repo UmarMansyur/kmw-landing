@@ -4,14 +4,14 @@
 
       <!-- header section start -->
       <header>
-        <div class="headerarea transparent__header header__sticky header__area">
+        <div class="headerarea header__sticky header__area bg-dark">
           <div class="container desktop__menu__wrapper">
             <div class="row">
               <div class="col-xl-2 col-lg-2 col-md-6">
                 <div class="headerarea__left">
                   <div class="headerarea__left__logo">
 
-                    <a href="index.html"><img src="img/logo/logo_1.png" alt="logo"></a>
+                    <a href="index.html"><img src="img/logo/logo.png" alt="logo" width="200"></a>
                   </div>
 
                 </div>
@@ -21,13 +21,13 @@
                   <nav>
                     <ul>
                       <li class="float-start">
-                        <a href="#home">Home</a>
+                        <a class="text-white" href="#home">Home</a>
                       </li>
                       <li class="float-start">
-                        <a href="#about">About</a>
+                        <a class="text-white" href="#about">About</a>
                       </li>
                       <li class="float-start">
-                        <a href="#pricing">Pricing</a>
+                        <a class="text-white" href="#pricing">Pricing</a>
                       </li>
                     </ul>
                   </nav>
@@ -35,13 +35,13 @@
               </div>
               <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="headerarea__right">
-                  <div class="headerarea__login">
-                    <a href="login.html">Login</a>
+                  <div class="headerarea__login bg-white">
+                    <a :href="urllogin">Login</a>
                   </div>
 
 
                   <div class="headerarea__button">
-                    <a href="#">Daftar Sekarang</a>
+                    <a :href="urlregistrasi">Daftar Sekarang</a>
                   </div>
                 </div>
               </div>
@@ -55,14 +55,14 @@
             <div class="row align-items-center">
               <div class="col-6">
                 <div class="mobile-logo">
-                  <a class="logo__dark" href="#"><img src="img/logo/logo_1.png" alt="logo"></a>
+                  <a class="logo__dark" href="#"><img src="img/logo/logo.png" alt="logo" width="150"></a>
                 </div>
               </div>
               <div class="col-6">
                 <div class="header-right-wrap">
 
                   <div class="mobile-off-canvas">
-                    <a class="mobile-aside-button" href="#"><i class="icofont-navigation-menu"></i></a>
+                    <a class="mobile-aside-button text-white" href="#"><i class="icofont-navigation-menu"></i></a>
                   </div>
                 </div>
               </div>
@@ -81,9 +81,9 @@
               <nav>
                 <ul class="mobile-menu">
 
-                  <li><a class="menu-item-has-children" href="contact.html">Home</a></li>
-                  <li><a class="menu-item-has-children" href="contact.html">About</a></li>
-                  <li><a class="menu-item-has-children" href="contact.html">Pricing</a></li>
+                  <li><a class="menu-item-has-children" href="#home">Home</a></li>
+                  <li><a class="menu-item-has-children" href="#about">About</a></li>
+                  <li><a class="menu-item-has-children" href="#pricing">Pricing</a></li>
                 </ul>
               </nav>
             </div>
@@ -115,7 +115,7 @@
                   <p>Menabung untuk haji dengan mudah dan aman</p>
                 </div>
                 <div class="educationarea__bottom__button">
-                  <a class=" btn btn-dark" href="#">Daftar Sekarang</a>
+                  <a class=" btn btn-dark" :href="urlregistrasi">Daftar Sekarang</a>
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@
 
 
       <!-- training__section__start -->
-      <div class="trainingarea sp_bottom_20" data-aos="fade-up">
+      <div class="trainingarea sp_bottom_20" data-aos="fade-up" id="about">
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
@@ -202,22 +202,20 @@
 
 
       <!-- about__section__start -->
-      <div class="aboutarea sp_top_30" data-aos="fade-up">
+      <div class="aboutarea sp_top_30" data-aos="fade-up" >
         <div class="container">
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
               <div class="aboutarea__img__inner text-center">
                 <div class="aboutarea__img" data-tilt>
                   <img class="aboutimg__1" src="img/about/about_8.png" alt="aboutimg">
-                  <img class="aboutimg__2"
+                  <img class="aboutimg__2 img-thumbnail"
                     src="https://asset.kompas.com/crops/bWkTRI2o1LlXodgk-smwMgewtuA=/122x51:1763x1145/750x500/data/photo/2023/05/19/6466fa45511d7.png"
                     alt="aboutimg" width="600">
                 </div>
               </div>
-
-
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-12 col-12 " id="about">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-12" >
               <div class="aboutarea__content__wraper">
                 <div class="aboutarea__button">
                   <div class="default__small__button">About Us</div>
@@ -246,14 +244,14 @@
                   </ul>
                 </div>
                 <div class="aboutarea__bottom__button">
-                  <a class="default__button" href="#"> Buruan Daftar Sekarang</a>
+                  <a class="default__button" :href="urlregistrasi"> Buruan Daftar Sekarang</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 my-5">
+            <div class="col-12 my-5" id="pricing">
               <h3 class="text-center">Pricing</h3>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up" v-for="item in categories.data.data">
               <div class="single__service">
                 <div class="service__img">
                   <div class="service__bg__img">
@@ -265,8 +263,15 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3>{{ item }}</h3>
-                  <p>Rp. 500.000</p>
+                  <h2>{{  item.name }}</h2>
+                  <span>Setoran Perbulan (1 Tahun): </span>
+                  <h4>{{ new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.limit / 12).slice(0,-3)  }}</h4>
+                  <span>Setoran Perbulan (2 Tahun): </span>
+                  <h4>{{ new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.limit / 24).slice(0,-3)  }}</h4>
+                  <span>Setoran Perbulan (3 Tahun): </span>
+                  <h4>{{ new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.limit / 36).slice(0,-3)  }}</h4>
+                  <span>Limit Tabungan: </span>
+                  <h4>{{ new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.limit).slice(0,-3) }}</h4>
                 </div>
                 <div class="service__small__img">
                   <svg class="icon__hover__img" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -288,7 +293,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
                 <div class="footerarea__logo">
-                  <a href="#"><img src="img/logo/logo_2.png" alt="logophoto"></a>
+                  <a href="#"><img src="img/logo/logo.png" alt="logophoto" width="200"></a>
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
@@ -348,9 +353,10 @@
 </template>
 
 <script setup lang="ts">
-import axios from 'axios'
-import { ref, onMounted } from 'vue';
-onMounted(() => {
-  const response = await useFetch('http://localhost:8080/saving-categories');
-})
+
+const { data: categories }:any = await useFetch('http://localhost:8080/saving-categories');
+const urllogin = 'https://simola.back.pembangunanpamekasan.com/login';
+const urlregistrasi = 'https://simola.back.pembangunanpamekasan.com/register';
+
+
 </script>
