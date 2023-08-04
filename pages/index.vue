@@ -11,7 +11,7 @@
                 <div class="headerarea__left">
                   <div class="headerarea__left__logo">
 
-                    <a href="index.html"><img src="img/logo/logo.png" alt="logo" width="200"></a>
+                    <a href="index.html"><img src="/img/logo/logo.png" alt="logo" width="200"></a>
                   </div>
 
                 </div>
@@ -55,7 +55,7 @@
             <div class="row align-items-center">
               <div class="col-6">
                 <div class="mobile-logo">
-                  <a class="logo__dark" href="#"><img src="img/logo/logo.png" alt="logo" width="150"></a>
+                  <a class="logo__dark" href="#"><img src="/img/logo/logo.png" alt="logo" width="150"></a>
                 </div>
               </div>
               <div class="col-6">
@@ -142,10 +142,10 @@
           </div>
 
           <div class="educationarea__shape_image">
-            <img class="hero__shape hero__shape__1" src="img/education/hero_shape2.png" alt="Shape">
-            <img class="hero__shape hero__shape__2" src="img/education/hero_shape3.png" alt="Shape">
-            <img class="hero__shape hero__shape__3" src="img/education/hero_shape4.png" alt="Shape">
-            <img class="hero__shape hero__shape__4" src="img/education/hero_shape5.png" alt="Shape">
+            <img class="hero__shape hero__shape__1" src="/img/education/hero_shape2.png" alt="Shape">
+            <img class="hero__shape hero__shape__2" src="/img/education/hero_shape3.png" alt="Shape">
+            <img class="hero__shape hero__shape__3" src="/img/education/hero_shape4.png" alt="Shape">
+            <img class="hero__shape hero__shape__4" src="/img/education/hero_shape5.png" alt="Shape">
           </div>
 
 
@@ -208,7 +208,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
               <div class="aboutarea__img__inner text-center">
                 <div class="aboutarea__img" data-tilt>
-                  <img class="aboutimg__1" src="img/about/about_8.png" alt="aboutimg">
+                  <img class="aboutimg__1" src="/img/about/about_8.png" alt="aboutimg">
                   <img class="aboutimg__2 img-thumbnail"
                     src="https://asset.kompas.com/crops/bWkTRI2o1LlXodgk-smwMgewtuA=/122x51:1763x1145/750x500/data/photo/2023/05/19/6466fa45511d7.png"
                     alt="aboutimg" width="600">
@@ -293,7 +293,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
                 <div class="footerarea__logo">
-                  <a href="#"><img src="img/logo/logo.png" alt="logophoto" width="200"></a>
+                  <a href="#"><img src="/img/logo/logo.png" alt="logophoto" width="200"></a>
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
