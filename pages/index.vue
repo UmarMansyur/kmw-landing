@@ -354,7 +354,7 @@
 
 <script setup lang="ts">
 
-const { data: categories }:any = await useFetch('http://localhost:8080/saving-categories');
+const { data: categories }:any = await useFetch('https://api.simola.kampungmelonnapote.co.id/saving-categories');
 const urllogin = 'https://simola.back.pembangunanpamekasan.com/login';
 const urlregistrasi = 'https://simola.back.pembangunanpamekasan.com/register';
 
