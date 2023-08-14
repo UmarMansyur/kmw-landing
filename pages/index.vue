@@ -109,7 +109,7 @@
                   <div class="default__small__button">Jamaah</div>
                 </div>
                 <div class="educationarea__heading">
-                  <h2>Ayo <span>Menabung</span> Untuk <span>Haji</span></h2>
+                  <h2>Ayo Haji dan Umroh bersama PT. Kamilah Wisata Muslim</h2>
                 </div>
                 <div class="educationarea__content">
                   <p>Menabung untuk haji dengan mudah dan aman</p>
@@ -251,7 +251,7 @@
             <div class="col-12 my-5" id="pricing">
               <h3 class="text-center">Pricing</h3>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up" v-for="item in categories.data.data">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up" v-for="item in categories.data.data" v-if="categories">
               <div class="single__service">
                 <div class="service__img">
                   <div class="service__bg__img">
