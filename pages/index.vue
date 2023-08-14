@@ -251,7 +251,7 @@
             <div class="col-12 my-5" id="pricing">
               <h3 class="text-center">Pricing</h3>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up" v-for="item in categories.data.data">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-3" data-aos="fade-up" v-for="item in result">
               <div class="single__service">
                 <div class="service__img">
                   <div class="service__bg__img">
@@ -353,11 +353,12 @@
 </template>
 
 <script setup lang="ts">
-
+const result = ref<any[]>([]);
 const { data: categories }:any = await useFetch('https://api.simola.kampungmelonnapote.co.id/saving-categories', {
   lazy: true,
   server: true
 });
+result.value = await categories._value.data.data;
 const urllogin = 'https://simola.back.pembangunanpamekasan.com/login';
 const urlregistrasi = 'https://simola.back.pembangunanpamekasan.com/register';
 
