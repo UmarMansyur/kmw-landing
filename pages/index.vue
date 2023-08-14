@@ -354,11 +354,10 @@
 
 <script setup lang="ts">
 const result = ref<any[]>([]);
-const { data: categories }:any = await useFetch('https://api.simola.kampungmelonnapote.co.id/saving-categories', {
-  lazy: true,
-  server: true
-});
-result.value = await categories._value.data.data;
+const { data: categories }:any = await useFetch('https://api.simola.kampungmelonnapote.co.id/saving-categories');
+if(categories._value.data.data.length > 0){
+  result.value = await categories._value.data.data;
+}
 const urllogin = 'https://simola.back.pembangunanpamekasan.com/login';
 const urlregistrasi = 'https://simola.back.pembangunanpamekasan.com/register';
 
